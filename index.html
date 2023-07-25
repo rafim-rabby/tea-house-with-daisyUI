@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme ="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -15,11 +15,11 @@
         rel="stylesheet">
 
     <title>Tea House</title>
-    
+
     <!-- styling manually -->
     <!-- specifying type of the fonts to be Manrope -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -27,53 +27,113 @@
     <!-- styling with tailwind format -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body class="font-manrope">
     <!-- header section -->
     <header class="container max-auto">
-        
         <!-- hero section -->
-        <div class="hero min-h-screen bg-base-200">
+        <div class="my-20">
             <div class="hero-content flex-col lg:flex-row">
-              <div>
-                <h1 class="text-7xl font-extrabold">
-                    It's good <br>
-                    tea time at The <br>
-                    Tea House</h1>
-                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Get Started</button>
-              </div>
-              <div>
-                <img src="./tea-house-resources/images/banner.png" class="max-w-sm" />
-
-                <!-- ratings badge -->
-                <div class="flex items-center gap-4 drop-shadow-lg bg-white rounded-lg p-5 w-60 -mt-24">
-                    <img src="./tea-house-resources/images/Star.svg" alt="">
-                    <div>
-                        <h2 class="text-3xl font-extrabold">
-                            5.00
-                        </h2>
-                        <p>Trust Pilot Ratings</p>
-                    </div>
-                    
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Get Started</button>
                 </div>
-              </div>
+                <div>
+                    <img src="./tea-house-resources/images/banner.png" class="max-w-sm" />
+
+                    <!-- ratings badge -->
+                    <div class="flex items-center gap-4 drop-shadow-lg bg-white rounded-lg p-5 w-60 -mt-24">
+                        <img src="./tea-house-resources/images/Star.svg" alt="">
+                        <div>
+                            <h2 class="text-3xl font-extrabold">
+                                5.00
+                            </h2>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
 
     </header>
+
     <!-- main section -->
-    <main></main>
+    <main class="container max-auto">
+        <!-- featured section -->
+        <section class="text-center">
+
+            <!-- featured content -->
+            <div class="my-24">
+                <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+                <p class="lg:max-w-3xl mx-auto mb-10 ">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly believable. </p>
+            </div>
+            <!-- featured card continer -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- first card-->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                    <figure class="px-10 pt-10">
+                        <img src="./tea-house-resources/images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Milk Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+
+                <!-- second card-->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                    <figure class="px-10 pt-10">
+                        <img src="./tea-house-resources/images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Black Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+
+                <!-- third card-->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                    <figure class="px-10 pt-10">
+                        <img src="./tea-house-resources/images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Lemon Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+
+                <!-- fourth card-->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                    <figure class="px-10 pt-10">
+                        <img src="./tea-house-resources/images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Green Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- footer section -->
     <footer></footer>
 </body>
